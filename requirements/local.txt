@@ -1,0 +1,5 @@
+-r base.txt
+
+django-extensions==2.0.7
+six==1.11.0
+typing==3.6.4
