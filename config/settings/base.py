@@ -32,9 +32,17 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+]
 
-    # Project Apps
-    'core.apps.CoreConfig',
+# Third Party apps
+INSTALLED_APPS += [
+    'authtools',
+]
+
+# Project apps
+INSTALLED_APPS += [
+    'authentication',
+    'core',
 ]
 
 MIDDLEWARE = [
@@ -125,4 +133,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 # Custom Auth User Model
-AUTH_USER_MODEL = 'core.CustomUser'
+AUTH_USER_MODEL = 'authentication.User'
