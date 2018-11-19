@@ -10,16 +10,16 @@
     <title>GENERIC DJANGO PROJECT</title>
 
     <!-- STATIC ASSETS -->
-    <link rel="stylesheet" type="text/css" href="{% static 'core/css/bootstrap.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'core/css/font-awesome.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'core/css/base.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
     {% block custom-css %}{% endblock custom-css %}
 </head>
 <body>
     {% block content %}
     {% endblock content %}
-<script type="text/application" src="{% static 'core/js/jquery.min.js' %}"></script>
-<script type="text/application" src="{% static 'core/js/bootstrap.min.js' %}"></script>
-<script type="text/application" src="{% static 'core/js/base.js' %}"></script>
+<script type="text/application" src="{% static 'js/jquery.min.js' %}"></script>
+<script type="text/application" src="{% static 'js/bootstrap.min.js' %}"></script>
+<script type="text/application" src="{% static 'js/base.js' %}"></script>
 </body>
 </html>

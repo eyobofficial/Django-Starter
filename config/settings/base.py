@@ -41,7 +41,7 @@ INSTALLED_APPS += [
 
 # Project apps
 INSTALLED_APPS += [
-    'authentication',
+    'accounts',
     'core',
 ]
 
@@ -133,4 +133,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 # Custom Auth User Model
-AUTH_USER_MODEL = 'authentication.User'
+AUTH_USER_MODEL = 'accounts.User'
