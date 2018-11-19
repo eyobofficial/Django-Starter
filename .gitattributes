@@ -1,0 +1,2 @@
+config/static/* linguist-vendored
+core/templates/* linguist-vendored
