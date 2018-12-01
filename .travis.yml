@@ -1,0 +1,21 @@
+language: python
+python:
+    - "3.6"
+
+env:
+    - DJANGO_SETTINGS_MODULE='config.settings.testing'
+
+install:
+    - pip install -r requirements/base.txt
+    - pip install psycopg2-binary --quiet
+
+services:
+    - postgresql
+
+before_script:
+    - psql -c 'create database travis_ci_test;' -U postgres
+
+script:
+    - python manage.py makemigrations --settings=config.settings.testing
+    - python manage.py migrate --settings=config.settings.testing
+    - python manage.py test --settings=config.settings.testing
