@@ -10,11 +10,7 @@ class User(AbstractEmailUser):
 
 
 class Profile(models.Model):
-    user = models.OneToOneField(
-        User,
-        related_name='profiles',
-        on_delete=models.CASCADE
-    )
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
 
 
 @receiver(post_save, sender=User)
