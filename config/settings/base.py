@@ -42,7 +42,6 @@ INSTALLED_APPS += [
 # Project apps
 INSTALLED_APPS += [
     'accounts',
-    'core',
 ]
 
 MIDDLEWARE = [
