@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "189baf7ed3f226e465b5e39edc6f9e09d55d755a657b2d3323b1c89e8a624244"
+            "sha256": "ce3c5ce714cede59c1e8cb3c1f68d7bc829d2326059637f430a442ac26f60022"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -24,13 +24,6 @@
             "index": "pypi",
             "version": "==2.2"
         },
-        "django-authtools": {
-            "hashes": [
-                "sha256:9ced04f5b124625e6dfc2bb8e802b478d7707aa854f00a720c50fb2512bd33d5"
-            ],
-            "index": "pypi",
-            "version": "==1.6.0"
-        },
         "django-extensions": {
             "hashes": [
                 "sha256:3be3debf53c77ca795bdf713726c923aa3c3f895e1a42e2e31a68c1a562346a4",
@@ -38,6 +31,21 @@
             ],
             "index": "pypi",
             "version": "==2.0.7"
+        },
+        "factory-boy": {
+            "hashes": [
+                "sha256:6f25cc4761ac109efd503f096e2ad99421b1159f01a29dbb917359dcd68e08ca",
+                "sha256:d552cb872b310ae78bd7429bf318e42e1e903b1a109e899a523293dfa762ea4f"
+            ],
+            "index": "pypi",
+            "version": "==2.11.1"
+        },
+        "faker": {
+            "hashes": [
+                "sha256:167cef2454482dc2fbd8b0ff6a5ba3dbac8d3a3ebdee6ba819d008100d9d9428",
+                "sha256:3f2f4570df28df2eb8f39b00520eb610081d6552975e926c6a2cbc64fd89c4c1"
+            ],
+            "version": "==1.0.5"
         },
         "mysqlclient": {
             "hashes": [
@@ -84,6 +92,13 @@
             "index": "pypi",
             "version": "==2.7.6.1"
         },
+        "python-dateutil": {
+            "hashes": [
+                "sha256:7e6584c74aeed623791615e26efd690f29817a27c73085b78e4bad02493df2fb",
+                "sha256:c89805f6f4d64db21ed966fda138f8a5ed7a4fdbc1a8ee329ce1b74e3c74da9e"
+            ],
+            "version": "==2.8.0"
+        },
         "python-decouple": {
             "hashes": [
                 "sha256:1317df14b43efee4337a4aa02914bf004f010cd56d6c4bd894e6474ec8c4fe2d"
@@ -113,6 +128,13 @@
                 "sha256:7c3dca29c022744e95b547e867cee89f4fce4373f3549ccd8797d8eb52cdb873"
             ],
             "version": "==0.3.0"
+        },
+        "text-unidecode": {
+            "hashes": [
+                "sha256:5a1375bb2ba7968740508ae38d92e1f889a0832913cb1c447d5e2046061a396d",
+                "sha256:801e38bd550b943563660a91de8d4b6fa5df60a542be9093f7abf819f86050cc"
+            ],
+            "version": "==1.2"
         },
         "typing": {
             "hashes": [

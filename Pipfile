@@ -6,7 +6,6 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-django-authtools = "==1.6.0"
 psycopg2-binary = "==2.7.6.1"
 python-decouple = "==3.1"
 pytz = "==2018.5"
@@ -15,6 +14,7 @@ six = "==1.11.0"
 typing = "==3.6.4"
 django = "==2.2"
 mysqlclient = "*"
+factory-boy = "*"
 
 [requires]
 python_version = "3.6"

@@ -34,14 +34,16 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
+
 # Third Party apps
-INSTALLED_APPS += [
-    'authtools',
-]
+
+INSTALLED_APPS += []
+
 
 # Project apps
+
 INSTALLED_APPS += [
-    'accounts',
+    'accounts.apps.AccountsConfig',
 ]
 
 MIDDLEWARE = [
@@ -136,5 +138,14 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
+# Authentications
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'accounts.backends.EmailBackend'
+]
+
+
 # Custom Auth User Model
-AUTH_USER_MODEL = 'accounts.User'
+
+AUTH_USER_MODEL = 'accounts.CustomUser'

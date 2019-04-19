@@ -1,17 +1,23 @@
 from django.contrib import admin
 
-from .models import User, Profile
+from .models import CustomUser, Profile
 
 
-class ProfileInline(admin.StackedInline):
-    model = Profile
-
-
-@admin.register(User)
-class UserAdmin(admin.ModelAdmin):
+@admin.register(CustomUser)
+class CustomUserAdmin(admin.ModelAdmin):
     list_display = (
-        'email', 'full_name', 'is_active',
-        'is_staff', 'is_superuser'
+        'username',
+        'email',
+        'is_active',
+        'is_staff',
+        'is_superuser',
+        'last_login'
     )
+    list_display_link = ('username', 'email')
     list_filter = ('is_active', 'is_staff', 'is_superuser')
-    inlines = (ProfileInline, )
+    search_fields = ('username', 'email', 'first_name', 'last_name')
+
+
+@admin.register(Profile)
+class ProfileAdmin(admin.ModelAdmin):
+    list_display = ('user', )
