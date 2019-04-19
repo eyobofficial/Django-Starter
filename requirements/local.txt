@@ -1,3 +1,0 @@
--r base.txt
-
-pkg-resources==0.0.0
